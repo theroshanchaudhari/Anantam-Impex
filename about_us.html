@@ -1,247 +1,395 @@
-  <!doctype html>
-  <html lang="en" style="zoom: 120%;">
-  <head>
-    <meta charset="utf-8">
+<!doctype html>
+<html lang="en" style="zoom: 120%;">
+<head>
+  <meta charset="utf-8">
 
-    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+  <!-- Required meta tags -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Required meta tags -->
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
-  	<link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" rel="stylesheet" />
+  <!-- Bootstrap CSS -->
+	<link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" rel="stylesheet" />
 
 
 
+	<title>Anantam Impex</title>
+	<link href="output-onlinepngtools.ico" rel="icon" type="image/x-icon" />
 
-  	<title>Anantam Impex</title>
-  	<link href="output-onlinepngtools.png" rel="icon" type="image/x-icon" />
+</head>
 
 
 
-  </head>
-  <body>
-    <style media="screen">
 
-    @-webkit-keyframes fadeIn {
-            0% {opacity: 0;}
-            100% {opacity: 1;}
-         }
+<body>
 
-         @keyframes fadeIn {
-            0% {opacity: 0;}
-            100% {opacity: 1;}
-         }
 
-    nav{
-    position:fixed;
-    box-shadow: 10px 20px 30px #c9c9c9;
-    height: 130px;
-    width: 100%;
-    }
-    img.logo{
-    position: fixed;
-    width: 280px;
-    height: 120px;
-    padding-top: 10px;
+  <style media="screen">
+
+
+  nav{
+  position:fixed;
+  box-shadow: 10px 20px 30px #c9c9c9;
+  height: 130px;
+  width: 100%;
+  }
+  img.logo{
+  position: fixed;
+  width: 280px;
+  height: 120px;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  }
+  nav ul{
+
+  float: right;
+  }
+  nav ul li{
+
+  display: inline-block;
+  line-height: 130px;
+  margin: 0 5px;
+
+  }
+  nav ul li a{
+
+  display: block;
+  }
+  a.active,a:hover{
+  border-color: #22a6e3
+  transition: .5s;
+  }
+  .checkbtn{
+  font-size: 50px;
+  color: #008fc5;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+  }
+  #check{
+
+  display: none;
+  }
+  #Row1Para{
+    color:white;
+    padding: 10px 50px 10px 50px;
+    background-color: #008fc5;
+    border-radius: 25px;
+    font-size: 20px;
+  }
+
+
+  h1{
+   width:auto;
+   height:auto;
+   font-size: 70px;
+   color: #008fc5;
+ }
+ h2{
+   width: auto;
+   height: auto;
+   font-size: 50px;
+   color: #008fc5;
+
+ }
+
+ #slider{
+   height: 300px;
+   margin-top: 200px;
+   width:50%;
+ }
+
+ #power{
+   margin-top: 40px;
+   height:100px;
+   width: auto;
+ }
+ #fixant{
+   margin-top: 40px;
+   height:100px;
+   width: auto;
+ }
+ #anfix{
+   margin-top: 40px;
+   height:100px;
+   width: auto;
+ }
+ #seer{
+   height:200px;
+   width: auto;
+ }
+ #aone{
+   height:200px;
+   width: auto;
+ }
+ #ceophoto{
+   margin-top: auto;
+   height:300px;
+   width: auto;
+ }
+ #ceopara{
+   animation: CeoPara 8s;
+
+
+ }
+ #sliderbox{
+   display: none;
+ }
+ @keyframes CeoPara {
+
+   from{
+     opacity: 0;
+   }
+   to{
+     opacity: 1;
+   }
+
+ }
+
+
+
+  @media (max-width: 1000px){
+  img.logo{
+    width:200px;
+    height: 90px;
     padding-left: 10px;
-    padding-right: 10px;
-    }
-    nav ul{
-
+    position: fixed;
+  }
+  nav{
+    height: 100px;
+  }
+  nav ul li a{
+    font-size: 16px;
+  }
+  }
+  @media (max-width: 1000px){
+  .checkbtn{
     float: right;
-    }
-    nav ul li{
-
-    display: inline-block;
-    line-height: 130px;
-    margin: 0 5px;
-
-    }
-    nav ul li a{
-
+    font-size: 40px;
+    padding-top: 20px;
     display: block;
-    }
-    a.active,a:hover{
-    border-color: #22a6e3
-    transition: .5s;
-    }
-    .checkbtn{
-    font-size: 50px;
+  }
+  ul{
+    position:fixed;
+    width: 100%;
+    height: auto;
+    background: white;
+    top: 100px;
+    right: -120%;
+    text-align: center;
+    transition: all 2s;
+    font-size: 15px;
+
+  }
+  nav ul li{
+    display: block;
+    margin: 6px 0;
+    text-align: center;
+    line-height: 30px;
+  }
+  nav ul li a{
+    font-size: 15px;
+
+  }
+  a.hover,a.active{
+    background: none;
+    color: #008fc5;;
+  }
+
+  h1{
+    width:auto;
+   height:auto;
+   font-size: 40px;
+   color: #008fc5;
+  }
+  h2{
+    width: auto;
+    height: auto;
+    font-size: 40px;
     color: #008fc5;
-    float: right;
-    line-height: 80px;
-    margin-right: 40px;
-    cursor: pointer;
+
+  }
+
+  #check:checked ~ ul{
+    right: 0;
+  }
+  #Row1Para{
+    padding: 10px 10px 10px 10px;
+    border-radius: 15px;
+    font-size: 15px;
+  }
+
+  #slider{
+    height: 200px;
+    margin-top: 40px;
+    width:100%;
+  }
+
+  #power{
+    margin-top: 40px;
+    height:100px;
+    width: auto;
+  }
+  #fixant{
+    margin-top: 40px;
+    height:100px;
+    width: auto;
+  }
+  #anfix{
+    margin-top: 40px;
+    height:100px;
+    width: auto;
+  }
+  #seer{
+    height:200px;
+    width: auto;
+  }
+  #aone{
+    height:200px;
+    width: auto;
+  }
+  #ceophoto{
+    margin-top: auto;
+    height:200px;
+    width: auto;
+  }
+  #doubleqotes{
     display: none;
-    }
-    #check{
-
+  }
+  #sliderbox{
+    display: block;
+  }
+  #brands{
     display: none;
+  }
+  }
+
+  @keyframes slidy {
+      0% { left: 0%; }
+      10% { left: 0%; }
+      20% { left: -100%; }
+      30% { left: -100%; }
+      40% { left: -200%; }
+      50% { left: -200%; }
+      60% { left: -300%; }
+      70% { left: -300%; }
+      80% { left: -400%; }
+      90% { left: -400%; }
+      100% { left: 0%; }
+      }
+
+      body { margin: 0; border-radius: 30px;}
+      div#slider { overflow: hidden; }
+      div#slider figure img { width: 20%; float: left; }
+      div#slider figure {
+        position: relative;
+        width: 500%;
+        margin: 0;
+        left: 0;
+        text-align: left;
+        font-size: 0;
+        animation: 30s slidy infinite;
     }
 
-    #txtpara{
-      background-color: white;
-      right: 600px;
-      padding-top: 60px;
-      padding-right: 20px;
-      padding-bottom: 30px;
-      padding-left: 20px;
-      align-self: center;
-      border:solid;
-      border-width:5px;
-      border-color: white;
-      border-radius:100px;
-      height:350px;
-      width:500px;
-      font-size:27px;
-      color:#008fc5;
+  </style>
 
-    }
-    #ourstory{
-      font-size: auto;
-    }
 
-    margin-left: 100px;
-    @media (max-width: 1000px){
-    img.logo{
-      width:200px;
-      height: 90px;
-      padding-left: 10px;
-      position: fixed;
-    }
-    nav{
-      height: 100px;
-    }
-    nav ul li a{
-      font-size: 16px;
-    }
-    }
-    @media (max-width: 1000px){
-    .checkbtn{
-      float: right;
-      font-size: 40px;
-      padding-top: 20px;
-      display: block;
-    }
-    ul{
-      position:fixed;
-      width: 100%;
-      height: auto;
-      background: white;
-      top: 100px;
-      right: -120%;
-      text-align: center;
-      transition: all 2s;
-      font-size: 15px;
-
-    }
-    nav ul li{
-      display: block;
-      margin: 6px 0;
-      text-align: center;
-      line-height: 30px;
-    }
-    nav ul li a{
-      font-size: 15px;
-
-    }
-    a.hover,a.active{
-      background: none;
-      color: #008fc5;;
-    }
-
-    #txtpara{
-      background-color:white;
-      right:0;
-      left:0;
-      padding-top: 10px;
-      padding-right: 20px;
-      padding-bottom: 20px;
-      padding-left: 20px;
-       border:solid;
-       border-width:5px;
-       border-color: white;
-       border-radius:50px;
-       height:150px;
-       width:300px;
-       font-size:15px;
-       color:#008fc5;
-
-    }
-
-    #ourstory{
-      font-size: 50px;
-    }
-
-    #check:checked ~ ul{
-      right: 0;
-    }
-    }
-    </style>
-
-    <!--Type Effect-->
-    <script>
-  var i = -1;
-  var txt = "Our Story";
+  <script>
+  var i = 0;
+  var txt = 'Our Story';
   var speed = 55;
 
   function typeWriter() {
-    if (i < txt.length) {
-      document.getElementById("ourstory").innerHTML += txt.charAt(i);
-      i++;
-      setTimeout(typeWriter, speed);
-    }
+   if (i < txt.length) {
+     document.getElementById("anim").innerHTML += txt.charAt(i);
+     i++;
+     setTimeout(typeWriter, speed);
+   }
   }
   </script>
 
-  <script>
-          var i1 = -10;
-          var txt1 = "We have worked so hard and being the one of the best now i am owner of thgis comapny i ear 1 cr per year i work so hard to make the comapny at heights ";
-          var speed1 = 55;
+  <!-- NAVBAR-->
+  <nav class="sticky-top bg-light">
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+        <i>
+          <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-justify" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" d="M2 12.5a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z"/>
+          </svg>
+        </i>
+      </label>
+      <a href="index.html"><img src="AnantamImpex.png" class="logo sticky-top" ></a>
+      <ul class="bg-light px-5">
+        <li><a class="btn btn-outline-primary btn-lg" href="place_order.html" >Place Order</a></li>
+        <li><a class="btn btn-outline-primary btn-lg px-4 active" href="about_us.html">About Us</a></li>
+        <li><a class="btn btn-outline-primary btn-lg" href="contact_us.php">Contact Us</a></li>
+      </ul>
+    </nav>
+    <!--Heading-->
 
-          function typeWriter1() {
-            if (i1 < txt1.length) {
-              document.getElementById("txtpara").innerHTML += txt1.charAt(i1);
-              i1++;
-              setTimeout(typeWriter1, speed1);
-            }
-          }
-       </script>
+    <div class="col-md-12 text-center mt-5 mx-auto" width="100%">
+      <h1 id="anim"><script type="text/javascript">
+  typeWriter();</script></h1>
 
+    </div>
 
-    <!-- NAVBAR-->
-    <nav class="sticky-top bg-light">
-        <input type="checkbox" id="check">
-        <label for="check" class="checkbtn">
-          <i>
-        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-justify" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-    <path fill-rule="evenodd" d="M2 12.5a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z"/>
-  </svg>
-          </i>
-        </label>
-        <a href="index.html"><img src="AnantamImpex.png" class="logo sticky-top" ></a>
-        <ul class="bg-light px-5">
-          <li><a class="btn btn-outline-primary btn-lg" href="place_order.html" >Place Order</a></li>
-          <li><a class="btn btn-outline-primary btn-lg px-4" href="about_us.html">About Us</a></li>
-          <li><a class="btn btn-outline-primary btn-lg" href="contact_us.php">Contact Us</a></li>
-        </ul>
-      </nav>
-
-      <h1 class="text-center display-3 container mt-5 my-5" id="ourstory"  style="color:#008fc5; font-family: 'Play', sans-serif;" @import url('https://fonts.googleapis.com/css2?family=Play:wght@700&display=swap');><script type="text/javascript">typeWriter();
-      </script> </h1>
-
-      <div  class=" col-md-5 text-center mx-auto " id="txtpara" style="color:#008fc5; font-family: 'Play', sans-serif;" @import url('https://fonts.googleapis.com/css2?family=Play:wght@700&display=swap'); >
-        <h1>
-          <script type="text/javascript">typeWriter1();</script>
-        </h1>
+    <!--Row1-->
+    <div class="row col-md-12 container  mx-auto mt-5 " width="100%">
+      <div class="col-md-5 align-self-center text-center mx-auto mx-5 " id="Row1Para" >
+        <p class="container"> Lucy got up from her chair, taking a quick look into the mirror - She looked casual, and had not done much out of herself today. It seemed fine. She left, after locking her and Tiff’s room, and somewhere wishing the Latina had forgot her key. That would be hilarious. She chuckled by the thought, and licked her lips, without thinking further about it. Lucy walked through the halls, echoing her footsteps - Even though, there was people enough to fill out the space.
+        </p>
       </div>
+        <div class="col-md-5 align-self-center  mx-auto mx-5 " >
+          <img class="container" src="team.jpg" id="Row1Photo"alt="">
+      </div>
+    </div>
 
 
-      <!-- Optional JavaScript -->
-      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-    </body>
-  </html>
+  <div class="row col-md-12 container mx-auto mx-5 mt-5 mb-5 mt-0" width="100%" style="background-color:#e4f6f7;">
+      <div class="col-md-5 align-self-center text-center mx-auto mx-5">
+          <img src="ceo.png" width="300px" height="300px" alt="ceo" id="ceophoto">
+      </div>
+      <h1  class="display-3 mt-5" id="doubleqotes">"</h1>
+      <div class="col-md-5 align-self-center text-center mx-5">
+          <p id="ceopara">Lucy got up from her chair, taking a quick look into the mirror - She looked casual, and had not done much out of herself today. It seemed fine. She left, after locking her and Tiff’s room, and somewhere wishing the Latina had forgot her key. That would be hilarious. She chuckled by the thought, and licked her lips, without thinking further about it. Lucy walked through the halls, echoing her footsteps - Even though, there was people enough to fill out the space.</p>
+      </div>
+      <h1  class="display-3 mt-5 mr-5" id="doubleqotes">"</h1>
+    </div>
+
+    <h2 class="text-center mx-1">Collaborated Brands</h2>
+
+    <div class="col-md-5 align-self-center text-center mx-auto mx-5 mt-5" id="sliderbox">
+      <div id="slider"  style="text-align:center; margin:auto; border-radius: 30px;">
+          <figure >
+
+            <img class="mx-auto" src="power.png" id="power" alt>
+
+            <img class="mx-auto" src="seer.png"  id="seer" alt>
+
+            <img class="mx-auto" src="anfix.png" style="border-radius:30px;" id="anfix" alt>
+
+            <img class="mx-auto" src="aone.png" id="aone" alt>
+
+            <img class="mx-auto" src="fixant.png" style="border-radius:30px;" id="fixant" alt>
+          </figure>
+      </div>
+    </div>
+
+    <div class="container row col-md-12 mt-5 px-5" id="brands">
+      <img src="power.png" alt="">
+      <img class="mx-auto" src="seer.png"  id="seer" alt>
+      <img class="mx-auto" src="anfix.png" style="border-radius:30px;" id="anfix" alt>
+      <img class="mx-auto" src="aone.png" id="aone" alt>
+      <img class="mx-auto" src="fixant.png" style="border-radius:30px;" id="fixant" alt>
+
+    </div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  </body>
+</html>
