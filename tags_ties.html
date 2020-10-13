@@ -1,173 +1,230 @@
 <!doctype html>
 <html lang="en" style="zoom: 120%;">
+
 <head>
   <meta charset="utf-8">
 
   <!-- Required meta tags -->
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+
   <!-- Bootstrap CSS -->
-	<link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" rel="stylesheet" />
+  <link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" rel="stylesheet" />
 
 
 
-	<title>Anantam Impex</title>
-	<link href="output-onlinepngtools.ico" rel="icon" type="image/x-icon" />
+  <title>Anantam Impex</title>
+  <link href="output-onlinepngtools.ico" rel="icon" type="image/x-icon" />
 
 </head>
+
 <body>
   <style media="screen">
-  nav{
-  position:fixed;
-  box-shadow: 10px 20px 30px #c9c9c9;
-  height: 130px;
-  width: 100%;
-  }
-  img.logo{
-  position: fixed;
-  width: 280px;
-  height: 120px;
-  padding-top: 10px;
-  padding-left: 10px;
-  padding-right: 10px;
-  }
-  nav ul{
+    nav {
+      position: fixed;
+      box-shadow: 10px 20px 30px #c9c9c9;
+      height: 130px;
+      width: 100%;
+    }
 
-  float: right;
-  }
-  nav ul li{
+    img.logo {
+      position: fixed;
+      width: 280px;
+      height: 120px;
+      padding-top: 10px;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
 
-  display: inline-block;
-  line-height: 130px;
-  margin: 0 5px;
+    nav ul {
 
-  }
-  nav ul li a{
+      float: right;
+    }
 
-  display: block;
-  }
-  a.active,a:hover{
-  border-color: #22a6e3
-  transition: .5s;
-  }
-  .checkbtn{
-  font-size: 50px;
-  color: #008fc5;
-  float: right;
-  line-height: 80px;
-  margin-right: 40px;
-  cursor: pointer;
-  display: none;
-  }
-  #check{
+    nav ul li {
 
-  display: none;
-  }
+      display: inline-block;
+      line-height: 130px;
+      margin: 0 5px;
 
-  #box{
-  top:300px;
-  }
+    }
 
-  @media (max-width: 1000px){
-  img.logo{
-    width:200px;
-    height: 90px;
-    padding-left: 10px;
-    position: fixed;
-  }
-  nav{
-    height: 100px;
-  }
-  nav ul li a{
-    font-size: 16px;
-  }
-  }
-  @media (max-width: 1000px){
-  .checkbtn{
-    float: right;
-    font-size: 40px;
-    padding-top: 20px;
-    display: block;
-  }
-  ul{
-    position:fixed;
-    width: 100%;
-    height: auto;
-    background: white;
-    top: 100px;
-    right: -120%;
-    text-align: center;
-    transition: all 2s;
-    font-size: 15px;
+    nav ul li a {
 
-  }
-  nav ul li{
-    display: block;
-    margin: 6px 0;
-    text-align: center;
-    line-height: 30px;
-  }
-  nav ul li a{
-    font-size: 15px;
+      display: block;
+    }
 
-  }
-  a.hover,a.active{
-    background: none;
-    color: #008fc5;;
-  }
+    a.active,
+    a:hover {
+      border-color: #22a6e3 transition: .5s;
+    }
 
-  #check:checked ~ ul{
-    right: 0;
-  }
-  #box{
-    top:0;
-  }
-  }
+    .checkbtn {
+      font-size: 50px;
+      color: #008fc5;
+      float: right;
+      line-height: 80px;
+      margin-right: 40px;
+      cursor: pointer;
+      display: none;
+    }
+
+    #check {
+
+      display: none;
+    }
+
+    #box {
+      top: 120px;
+    }
+
+
+
+    .innerbox {
+      border-radius: 40px;
+      border-width: thick;
+    }
+
+    @media (max-width: 1000px) {
+      img.logo {
+        width: 200px;
+        height: 90px;
+        padding-left: 10px;
+        position: fixed;
+      }
+
+      nav {
+        height: 100px;
+      }
+
+      nav ul li a {
+        font-size: 16px;
+      }
+    }
+
+    @media (max-width: 1000px) {
+      .checkbtn {
+        float: right;
+        font-size: 40px;
+        padding-top: 20px;
+        display: block;
+      }
+
+      ul {
+        position: fixed;
+        width: 100%;
+        height: auto;
+        background: white;
+        top: 100px;
+        right: -120%;
+        text-align: center;
+        transition: all 2s;
+        font-size: 15px;
+
+      }
+
+      nav ul li {
+        display: block;
+        margin: 6px 0;
+        text-align: center;
+        line-height: 30px;
+      }
+
+      nav ul li a {
+        font-size: 15px;
+
+      }
+
+      a.hover,
+      a.active {
+        background: none;
+        color: #008fc5;
+        ;
+      }
+
+      #check:checked~ul {
+        right: 0;
+      }
+
+      #box {
+        top: 20px;
+      }
+    }
   </style>
   <!-- NAVBAR-->
   <nav class="sticky-top bg-light">
-      <input type="checkbox" id="check">
-      <label for="check" class="checkbtn">
-        <i>
-      <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-justify" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-  <path fill-rule="evenodd" d="M2 12.5a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z"/>
-</svg>
-        </i>
-      </label>
-      <a href="index.html"><img src="AnantamImpex.png" class="logo sticky-top" ></a>
-      <ul class="bg-light px-5">
-        <li><a class="btn btn-outline-primary btn-lg" href="place_order.html" >Place Order</a></li>
-        <li><a class="btn btn-outline-primary btn-lg px-4" href="about_us.html">About Us</a></li>
-        <li><a class="btn btn-outline-primary btn-lg" href="contact_us.php">Contact Us</a></li>
-      </ul>
-    </nav>
+    <input type="checkbox" id="check">
+    <label for="check" class="checkbtn">
+      <i>
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-justify" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd"
+            d="M2 12.5a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z" />
+        </svg>
+      </i>
+    </label>
+    <a href="index.html"><img src="AnantamImpex.png" class="logo sticky-top"></a>
+    <ul class="bg-light px-5">
+      <li><a class="btn btn-outline-primary btn-lg" href="place_order.html">Place Order</a></li>
+      <li><a class="btn btn-outline-primary btn-lg px-4" href="about_us.html">About Us</a></li>
+      <li><a class="btn btn-outline-primary btn-lg" href="contact_us.php">Contact Us</a></li>
+    </ul>
+  </nav>
 
-    <div class="row col-md-12 text-center  mx-auto my-auto" id="box" width="80%">
-  <div class="col-sm-6 mt-5">
-    <div class="card">
-      <div class="card-body">
-        <h5 class="card-title">Special title treatment</h5>
-        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
+
+
+
+  <div class="row container text-center col-md-12 mx-auto"  id="box"  >
+    <div class="col-sm-5 mt-5 mx-auto ">
+      <div class="card" style="border-color:#008fc5; border-radius:40px; border-width:2px; box-shadow:10px 15px #d1e0e0;">
+        <img src="Ties.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Varity of Loop pins </h5>
+          <p class="card-text">Availabe in 4 Various Sizes and Colors.</p>
+          <a href="#" class="btn btn-lg btn-primary px-5"> View </a>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-5 mt-5 mx-auto">
+      <div class="card" style="border-color:#008fc5; border-radius:40px; border-width:2px; box-shadow:10px 15px #d1e0e0;">
+        <img src="Ties.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Varity of Ties</h5>
+          <p class="card-text">Availabe in Various material Compositions, Colors, Sizes and Shapes.</p>
+          <div class="dropdown">
+            <button class="btn btn-lg btn-primary px-5 dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              View
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <div class="alert alert-primary dropdown-item" role="alert">
+                A simple primary alert—check it out!
+              </div>
+              <div class="alert alert-primary dropdown-item" role="alert">
+                A simple primary alert—check it out!
+              </div>
+              <div class="alert alert-primary dropdown-item" role="alert">
+                A simple primary alert—check it out!
+              </div>
+
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
-  <div class="col-sm-6 mt-5">
-    <div class="card">
-      <div class="card-body">
-        <h5 class="card-title">Special title treatment</h5>
-        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
-      </div>
-    </div>
-  </div>
-</div>
 
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-  </body>
+
+
+
+
+
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</body>
+
 </html>
