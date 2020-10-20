@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en" style="zoom: 120%;">
+
 <head>
   <meta charset="utf-8">
 
@@ -7,138 +8,393 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <!-- Bootstrap CSS -->
-	<link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" rel="stylesheet" />
+  <link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" rel="stylesheet" />
 
 
 
-	<title>Anantam Impex</title>
-	<link href="output-onlinepngtools.ico" rel="icon" type="image/x-icon" />
+  <title>Anantam Impex</title>
+  <link href="output-onlinepngtools.ico" rel="icon" type="image/x-icon" />
 
 </head>
-<body>
+
+<body background="/Images/IMG_0639.JPG">
+
   <style media="screen">
-  nav{
-  position:fixed;
-  box-shadow: 10px 20px 30px #c9c9c9;
-  height: 130px;
-  width: 100%;
-  }
-  img.logo{
-  position: fixed;
-  width: 280px;
-  height: 120px;
-  padding-top: 10px;
-  padding-left: 10px;
-  padding-right: 10px;
-  }
-  nav ul{
+    /* Styles from the GreenSock website */
+    body {
+      background-attachment: fixed;
+      z-index: -1;
+      background-size:cover;
+       background-repeat: no-repeat;
+      background-image: url("IMG_0639.JPG");
+      font-weight: 300;
+    }
 
-  float: right;
-  }
-  nav ul li{
+    .ipsType_right {
+      text-align: right;
+    }
 
-  display: inline-block;
-  line-height: 130px;
-  margin: 0 5px;
+    .ipsType_center {
+      text-align: center;
+    }
 
-  }
-  nav ul li a{
+    .cInnerContent {
+      z-index: 999999;
+      max-width: 1240px;
+      margin-left: auto;
+      margin-right: auto;
+    }
 
-  display: block;
-  }
-  a.active,a:hover{
-  border-color: #22a6e3
-  transition: .5s;
-  }
-  .checkbtn{
-  font-size: 50px;
-  color: #008fc5;
-  float: right;
-  line-height: 80px;
-  margin-right: 40px;
-  cursor: pointer;
-  display: none;
-  }
-  #check{
+    .ipsSpacer_bottom_double {
+      margin-bottom: 30px;
+    }
 
-  display: none;
-  }
-  @media (max-width: 1000px){
-  img.logo{
-    width:200px;
-    height: 90px;
-    padding-left: 10px;
-    position: fixed;
-  }
-  nav{
-    height: 100px;
-  }
-  nav ul li a{
-    font-size: 16px;
-  }
-  }
-  @media (max-width: 1000px){
-  .checkbtn{
-    float: right;
-    font-size: 40px;
-    padding-top: 20px;
-    display: block;
-  }
-  ul{
-    position:fixed;
-    width: 100%;
-    height: auto;
-    background: white;
-    top: 100px;
-    right: -120%;
-    text-align: center;
-    transition: all 2s;
-    font-size: 15px;
+    .ipsGrid {
+      display: inline-block;
+      display: -ms-flexbox;
+      display: flex;
+      flex-wrap: wrap;
+    }
 
-  }
-  nav ul li{
-    display: block;
-    margin: 6px 0;
-    text-align: center;
-    line-height: 30px;
-  }
-  nav ul li a{
-    font-size: 15px;
+    .ipsGrid::before,
+    .ipsGrid::after {
+      display: table;
+      content: "";
+      line-height: 0;
+    }
 
-  }
-  a.hover,a.active{
-    background: none;
-    color: #008fc5;;
-  }
+    .ipsGrid>[class*="ipsGrid_span"] {
+      display: block;
+      width: 100%;
+      min-height: 30px;
+      box-sizing: border-box;
+    }
 
-  #check:checked ~ ul{
-    right: 0;
-  }
-  }
+    .ipsGrid>.ipsGrid_span5 {
+      width: 40.42553191489362%;
+    }
+
+    .ipsGrid>.ipsGrid_span7 {
+      width: 57.44680851063829%;
+    }
+
+    .ipsGrid>[class*="ipsGrid_span"] {
+      float: left;
+      margin-left: 2%;
+    }
+
+    .ipsGrid>[class*="ipsGrid_span"]:first-child {
+      margin-left: 0;
+    }
+
+    .feature {
+      display: flex;
+      align-items: center;
+    }
+
+    .card {
+      margin-bottom: 30px;
+      border: 1px solid #cccccc;
+      border-radius: 8px;
+      overflow: hidden;
+      background: #ffffff;
+      box-shadow: 1px 1px 5px 1px #CCCCCC;
+      transition: 0.3s;
+    }
+
+    .featured-image-container .card {
+      padding: 10px;
+      height: 0;
+      padding-bottom: calc(100% - 10px);
+    }
+
+    h2.heading_large {
+      font-size: 1.8em;
+    }
+
+    img {
+      max-width: 100%;
+    }
+
+    .header-section {
+      margin: 200px auto;
+    }
+
+    .gs_reveal {
+      opacity: 0;
+      visibility: hidden;
+      transition: transform 0s;
+    }
+
+    nav {
+      position: fixed;
+      box-shadow: 10px 20px 30px #c9c9c9;
+      height: 130px;
+      width: 100%;
+    }
+
+    img.logo {
+      position: fixed;
+      width: 280px;
+      height: 120px;
+      padding-top: 10px;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+
+    nav ul {
+
+      float: right;
+    }
+
+    nav ul li {
+
+      display: inline-block;
+      line-height: 130px;
+      margin: 0 5px;
+
+    }
+
+    nav ul li a {
+
+      display: block;
+    }
+
+    a.active,
+    a:hover {
+      border-color: #22a6e3 transition: .5s;
+    }
+
+    .checkbtn {
+      font-size: 50px;
+      color: #008fc5;
+      float: right;
+      line-height: 80px;
+      margin-right: 40px;
+      cursor: pointer;
+      display: none;
+    }
+
+    #check {
+
+      display: none;
+    }
+
+    @media (max-width: 1000px) {
+      img.logo {
+        width: 200px;
+        height: 90px;
+        padding-left: 10px;
+        position: fixed;
+      }
+
+      nav {
+        height: 100px;
+      }
+
+      nav ul li a {
+        font-size: 16px;
+      }
+    }
+
+    @media (max-width: 1000px) {
+      .checkbtn {
+        float: right;
+        font-size: 40px;
+        padding-top: 20px;
+        display: block;
+      }
+
+      ul {
+        position: fixed;
+        width: 100%;
+        height: auto;
+        background: white;
+        top: 100px;
+        right: -120%;
+        text-align: center;
+        transition: all 2s;
+        font-size: 15px;
+
+      }
+
+      nav ul li {
+        display: block;
+        margin: 6px 0;
+        text-align: center;
+        line-height: 30px;
+      }
+
+      nav ul li a {
+        font-size: 15px;
+
+      }
+
+      a.hover,
+      a.active {
+        background: none;
+        color: #008fc5;
+        ;
+      }
+
+      #check:checked~ul {
+        right: 0;
+      }
+    }
   </style>
+
+  <script type="text/javascript">
+    function animateFrom(elem, direction) {
+      direction = direction | 1;
+
+      var x = 0,
+        y = direction * 100;
+      if (elem.classList.contains("gs_reveal_fromLeft")) {
+        x = -100;
+        y = 0;
+      } else if (elem.classList.contains("gs_reveal_fromRight")) {
+        x = 100;
+        y = 0;
+      }
+      gsap.fromTo(elem, {
+        x: x,
+        y: y,
+        autoAlpha: 0
+      }, {
+        duration: 1.25,
+        x: 0,
+        y: 0,
+        autoAlpha: 1,
+        ease: "expo",
+        overwrite: "auto"
+      });
+    }
+
+    function hide(elem) {
+      gsap.set(elem, {
+        autoAlpha: 0
+      });
+    }
+
+    document.addEventListener("DOMContentLoaded", function() {
+      gsap.registerPlugin(ScrollTrigger);
+
+      gsap.utils.toArray(".gs_reveal").forEach(function(elem) {
+        hide(elem); // assure that the element is hidden when scrolled into view
+
+        ScrollTrigger.create({
+          trigger: elem,
+          onEnter: function() {
+            animateFrom(elem)
+          },
+          onEnterBack: function() {
+            animateFrom(elem, -1)
+          },
+          onLeave: function() {
+            hide(elem)
+          } // assure that the element is hidden when scrolled into view
+        });
+      });
+    });
+  </script>
+
   <!-- NAVBAR-->
   <nav class="sticky-top bg-light">
-      <input type="checkbox" id="check">
-      <label for="check" class="checkbtn">
-        <i>
-      <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-justify" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-  <path fill-rule="evenodd" d="M2 12.5a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z"/>
-</svg>
-        </i>
-      </label>
-      <a href="index.html"><img src="AnantamImpex.png" class="logo sticky-top" ></a>
-      <ul class="bg-light px-5">
-        <li><a class="btn btn-outline-primary btn-lg" href="place_order.html" >Place Order</a></li>
-        <li><a class="btn btn-outline-primary btn-lg px-4 " href="about_us.html">About Us</a></li>
-        <li><a class="btn btn-outline-primary btn-lg" href="contact_us.php">Contact Us</a></li>
-      </ul>
-    </nav>
+    <input type="checkbox" id="check">
+    <label for="check" class="checkbtn">
+      <i>
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-justify" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd"
+            d="M2 12.5a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z" />
+        </svg>
+      </i>
+    </label>
+    <a href="index.html"><img src="AnantamImpex.png" class="logo sticky-top"></a>
+    <ul class="bg-light px-5">
+      <li><a class="btn btn-outline-primary btn-lg" href="place_order.html">Place Order</a></li>
+      <li><a class="btn btn-outline-primary btn-lg px-4 " href="about_us.html">About Us</a></li>
+      <li><a class="btn btn-outline-primary btn-lg" href="contact_us.php">Contact Us</a></li>
+    </ul>
+  </nav>
+
+  <!--Body-->
+  <div class="cInnerContent">
+    <h1 class="header-section gs_reveal ipsType_center">Scroll down and up to see different reveal animations</h1>
+
+    <div class="features">
+
+      <div class="feature ipsSpacer_bottom_double ipsGrid ipsGrid_collapsePhone">
+        <div class="featured-image-container ipsGrid_span5 gs_reveal gs_reveal_fromLeft">
+          <div class="card">
+            <img width="300" class="card-img-top" src="output-onlinepngtools.png" alt="">
+          </div>
+        </div>
+
+        <div class="ipsGrid_span7 ipsType_left">
+          <h2 class="heading_large gs_reveal">Create amazing <strong>SVG</strong> animations</h2>
+          <p class="gs_reveal"><a href="https://greensock.com/drawsvg/">DrawSVGPlugin</a> allows you to progressively reveal (or hide) SVG strokes to make them look like they're being drawn. <a
+              href="https://greensock.com/morphsvg">MorphSVGPlugin</a> to Morph any SVG shape into any other shape smoothly regardless of the number of points in each. <a href="/docs/v3/Plugins/MotionPathPlugin">MotionPathPlugin</a> allows you to
+            easily move any object along a path.</p>
+        </div>
+      </div>
+
+      <div class="feature ipsSpacer_bottom_double ipsGrid ipsGrid_collapsePhone">
+        <div class="ipsGrid_span7 ipsType_right">
+          <h2 class="heading_large gs_reveal">Supercharge immersive <strong>WebGL</strong> experiences</h2>
+          <p class="gs_reveal">GreenSock is used in some of the most popular <a href="//threejs.org/">Three.js</a> powered WebGL projects. Animate any object in a scene. <a href="https://greensock.com/PixiPlugin/">PixiPlugin</a> makes animating <a
+              href="//www.pixijs.com/">Pixi.js</a> objects with GSAP a breeze. Animate position, scale, color effects and more with all the power and control of GSAP and the rendering speed of Pixi.js.</p>
+        </div>
+
+        <div class="featured-image-container ipsGrid_span5 gs_reveal gs_reveal_fromRight">
+          <div class="card">
+            <img width="100px" height="100px" class="card-img-top" src="rsz_img_0629.jpg" alt="">
+          </div>
+        </div>
+      </div>
+
+      <div class="feature ipsSpacer_bottom_double ipsGrid ipsGrid_collapsePhone">
+        <div class="featured-image-container ipsGrid_span5 gs_reveal gs_reveal_fromLeft">
+          <div class="card">
+            <img width="479" class="card-img-top" src="rsz_img_0618.jpg" alt="">
+          </div>
+        </div>
+
+        <div class="ipsGrid_span7 ipsType_left">
+          <h2 class="heading_large gs_reveal">Control performant <strong>Canvas</strong> animations</h2>
+          <p class="gs_reveal">GSAP makes animating with Canvas even easier by providing an easier way to look and sequence animations. GSAP works great with <a href="//www.adobe.com/products/animate.html">Adobe Animate</a> and <a
+              href="//createjs.com/easeljs">EaseJS</a> through GSAP's <a href="https://greensock.com/easelplugin/">EaselJSPlugin</a>.</p>
+        </div>
+      </div>
+
+      <div class="feature ipsSpacer_bottom_double ipsGrid ipsGrid_collapsePhone">
+        <div class="ipsGrid_span7 ipsType_right">
+          <h2 class="heading_large gs_reveal"><strong>Award winning</strong> websites</h2>
+          <p class="gs_reveal">GSAP is used on over 8,500,000 sites and over 1,000 sites featured on <a href="https://www.awwwards.com/websites/gsap-animation/" target="_blank">Awwwards</a>. For some of our favorites, check out <a
+              href="https://greensock.com/showcase/">our showcase</a>.</p>
+        </div>
+
+        <div class="featured-image-container ipsGrid_span5 gs_reveal gs_reveal_fromRight">
+          <div class="card">
+            <img width="479" class="card-img-top" src="rsz_img_0635.jpg" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-  </body>
+
+
+
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</body>
+
 </html>
